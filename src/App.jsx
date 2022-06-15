@@ -7,11 +7,8 @@ import ProtectedRoute from './utils/ProtectedRoute'
 const App = () => (
   <UserProvider>
     <FirestoreProvider>
-    <Routes>
-        <Route
-          path="/"
-          element={<h1>Hello world!</h1>}
-        />
+      <Routes>
+        <Route path="/" element={<h1>Hello world!</h1>} />
         <Route
           path="/notebooks"
           element={

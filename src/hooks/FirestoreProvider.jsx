@@ -6,7 +6,6 @@ import firebaseApp from '../firebase/firebaseApp'
 const FirestoreContext = React.createContext()
 
 const FirestoreProvider = ({ children }) => {
-
   const [app, setApp] = React.useState(null)
   const [db, setDb] = React.useState(null)
 

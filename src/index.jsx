@@ -10,5 +10,5 @@ const reactRoot = ReactDOM.createRoot(root)
 reactRoot.render(
   <HashRouter>
     <App />
-  </HashRouter>,
+  </HashRouter>
 )

@@ -5,7 +5,7 @@ import { UserProvider } from '../hooks/UserProvider'
 
 const ProtectedRoute = ({ children }) => {
   const { user } = React.useContext(UserProvider)
-  return ((user) ? children : <Navigate to="/" />)
+  return user ? children : <Navigate to="/" />
 }
 
 ProtectedRoute.propTypes = {
